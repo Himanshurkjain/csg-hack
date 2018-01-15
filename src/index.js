@@ -1,8 +1,9 @@
-import fetch from 'isomorphic-fetch';
+(function() {
+    var angular = require('angular');
 
-// Note: this is the entry point for the entire application
+    angular.module('app', []);
 
-// step 1: you will need to load the pizza data. it is available at /pizza.json. what-wg fetch is pre-installed.
-// remember that fetch uses promises.
+    angular.module('app').controller('PizzaController', require('./pizza.controller'));
 
-// step 2: implement the view and required behaviors
+    angular.module('app').service('PizzaService', require('./pizza.service'));
+})();
