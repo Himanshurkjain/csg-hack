@@ -3,7 +3,7 @@
 
     angular.module('app', []);
 
-    angular.module('app').controller('PizzaController', require('./pizza.controller'));
+    angular.module('app').controller('HackController', require('./hack.controller'));
 
-    angular.module('app').service('PizzaService', require('./pizza.service'));
+    angular.module('app').service('HackService', require('./hack.service'));
 })();

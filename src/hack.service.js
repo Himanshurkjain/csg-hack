@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('app')
-        .service('pizzaService', pizzaService);
+        .service('hackService', hackService);
 
-    function pizzaService($http) {
+    function hackService($http) {
         var vm = this;
         vm.getPizzaList = getPizzaList;
 
@@ -13,5 +13,5 @@
         }
     }
 
-    module.exports = pizzaService;
+    module.exports = hackService;
 })();
